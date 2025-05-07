@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Sensorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Sensorial</h1>
+            <p>Interaja com recursos do navegador</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Localização</h2>
+                <button id="geo-btn">Obter Localização</button>
+                <div id="geo-result" class="result"></div>
+            </section>
+
+            <section class="card">
+                <h2>Câmera</h2>
+                <button id="camera-btn">Ligar Câmera</button>
+                <div class="camera-container">
+                    <video id="camera" autoplay playsinline></video>
+                    <div class="camera-placeholder">Clique em "Ligar Câmera" para iniciar</div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Arraste e Solte</h2>
+                <div class="drag-area">
+                    <div id="drag-item" draggable="true">Arraste-me</div>
+                    <div id="drop-zone">Solte aqui</div>
+                </div>
+                <div id="drop-result" class="result"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Criado por <span id="dev-name">Larissa</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
